@@ -28,6 +28,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +37,67 @@
     transform: rotate(360deg);
   }
 }
+
+.app-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.question-display, .media-display {
+  flex: 1;
+  text-align: center;
+}
+
+.teepee-button {
+  color: #ece5f2;
+  font-size: 18px;
+  float: right;
+  background: #6750a4;
+  border-radius: 5px
+    /* 6px */
+  ;
+  font-weight: normal;
+  padding-top: 0.5rem
+    /* 8px */
+  ;
+  padding-bottom: 0.5rem
+    /* 8px */
+  ;
+  padding-left: 1rem
+    /* 16px */
+  ;
+  padding-right: 1rem
+    /* 16px */
+  ;
+}
+.custom-grid {
+  grid-template-columns: 1fr 2fr; /* Adjust these values */
+}
+
+.animation{
+  animation: rotate-text-up 1.5s ;
+}
+@keyframes rotate-text-up {
+0% {
+  transform: translate3d(90px, 0px, 0);
+  opacity: 0;
+}
+80% {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+}
+
+.paragraph{
+  color: rgba(255, 255, 255, 0.84);
+font-family: Roboto;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 127.273% */
+letter-spacing: 0.022px;
+}
+
+
