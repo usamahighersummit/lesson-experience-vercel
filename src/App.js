@@ -117,7 +117,7 @@ const App = () => {
     {
       "responseId":5,
         "title": "Types of ROM",
-        "text": "Now that we know what a habitat, population and community is, how would you explain the term “ecosystem”?<br/> <br/> <br/> <br/> Well, an ecosystem is the community of all the organisms living in the same area, with many habitats within that area. All the organisms are interdependent and interact with each other, together with the nonliving factors.<br/> <br/> We are now aware of how organisms live and can now begin to explore how they interact with each other.",
+        "text": "Now that we know what a habitat, population and community is, how would you explain the term “ecosystem”?<br/> <br/>  Well, an ecosystem is the community of all the organisms living in the same area, with many habitats within that area. All the organisms are interdependent and interact with each other, together with the nonliving factors.<br/> <br/> We are now aware of how organisms live and can now begin to explore how they interact with each other.",
         "media": Question2,
         "hasButtons": true,
         "hasNextResponse": false,
@@ -205,6 +205,7 @@ const App = () => {
 
     const handleRepeat = (text)=>{
       window.speechSynthesis.cancel();
+      setPauseResumeStatus(true);
       setIsSpinning(true);
   speakText(text); // Your existing function call
   setTimeout(() => {

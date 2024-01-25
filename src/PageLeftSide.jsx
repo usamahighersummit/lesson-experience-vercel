@@ -117,7 +117,7 @@ function PageLeftSide({
             </button> */}
               {lessonResponseData[currentIndex].hasButtons && !isLoading ? (
                 <>
-                  <div>
+                  <div style={{ visibility: speaking ? "hidden" : "visible" }}>
                     {selectedResponseButtons.map((button, index) => (
                       <div>
                         <button
